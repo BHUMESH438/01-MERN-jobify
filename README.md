@@ -1,5 +1,3 @@
-# jobify-web-app
-
 ## Create React APP
 
 [VITE](https://vitejs.dev/guide/)
@@ -5847,6 +5845,7 @@ const PageBtnContainer = () => {
     if (currentPage !== numOfPages && currentPage !== numOfPages - 1) {
       pageButtons.push(addPageButton({ pageNumber: currentPage + 1, activeClass: false }));
     }
+
     if (currentPage < numOfPages - 2) {
       pageButtons.push(
         <span className=' page-btn dots' key='dots+1'>
