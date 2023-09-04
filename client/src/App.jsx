@@ -9,6 +9,7 @@ import { action as deleteAction } from './pages/DeleteJob';
 import { loader as dashboardloader } from './pages/DashboardLayout';
 import { loader as allJobsLoader } from './pages/AllJobs';
 import { loader as adminLoader } from './pages/Admin';
+import { loader as statsLoader } from './pages/Stats';
 import { action as profileAction } from './pages/Profile';
 
 export const checkDefaultTheme = () => {
@@ -43,7 +44,7 @@ const router = createBrowserRouter([
         loader: dashboardloader,
         children: [
           { index: true, element: <AddJob />, action: addJobAction },
-          { path: 'stats', element: <Stats /> },
+          { path: 'stats', element: <Stats />, loader: statsLoader },
           { path: 'all-jobs', element: <AllJobs />, loader: allJobsLoader },
           { path: 'profile', element: <Profile />, action: profileAction },
           { path: 'admin', element: <Admin />, loader: adminLoader },

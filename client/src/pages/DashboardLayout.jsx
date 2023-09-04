@@ -34,7 +34,6 @@ const Dashboard = () => {
     localStorage.setItem('darkTheme', newdarktheme);
   };
   const toggleSidebar = () => {
-    console.log('togglesidebar....');
     setShowSidebar(!showSidebar);
   };
   //logout is a getreq from  client

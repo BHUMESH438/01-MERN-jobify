@@ -1,4 +1,4 @@
-import mongoose, { model } from 'mongoose';
+import mongoose from 'mongoose';
 import { JOB_STATUS, JOB_TYPE } from '../utils/constants.js';
 
 const jobSchema = mongoose.Schema(

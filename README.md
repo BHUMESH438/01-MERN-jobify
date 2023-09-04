@@ -5491,6 +5491,7 @@ export const getAllJobs = async (req, res) => {
 
 #### Search Container
 
+- by default the html form will create a query while submitting
 - setup log in AllJobs loader
 
 ```js
